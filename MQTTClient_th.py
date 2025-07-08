@@ -546,9 +546,5 @@ with col2:
         with json_placeholder.container():
             st.info("Connect to the MQTT broker to start receiving and parsing JSON messages.")
 
-    else:
-        with message_placeholder.container():
-            st.info("Connect to the MQTT broker to start receiving messages.")
-
 if st.button("Refresh to process MQTT events"):
         st.rerun()
